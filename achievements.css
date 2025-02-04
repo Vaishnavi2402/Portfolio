@@ -1,0 +1,101 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    margin: 0; /* Remove default margin */
+    background-color: #091a2c; /* Background color */
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #091a2c;
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    padding: 10px;
+}
+
+/* Navbar links */
+.navbar a {
+    display: inline-block;
+    text-align: center;
+    padding: 12px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 17px;
+    margin-right: 20px; /* Add space between links */
+}
+
+/* Remove margin-right for the last link */
+.navbar a:last-child {
+    margin-right: 0;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+    background-color: #04AA6D;
+}
+
+/* Current/active navbar link */
+.navbar a.active {
+    color: #04AA6D;
+    border-bottom: 2px solid red; /* Red underline for active link */
+}
+
+.achievements-container {
+    text-align: center;
+    color: #ffffff;
+    width: 60%;
+    margin-top: 25px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.certifications-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items */
+    gap: 20px; /* Add space between items */
+    margin-top: 30px; /* Add more space between heading and list */
+}
+
+.certifications-list li {
+    margin-bottom: 10px;
+}
+
+/* Certification links styled as buttons */
+.certifications-list a {
+    display: inline-block;
+    padding: 12px 20px; /* Add padding for button-like appearance */
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: #b58527; /* Button background color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.certifications-list a:hover {
+    background-color: #84ecbf;
+    color: #04AA6D /* Darker background color on hover */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}

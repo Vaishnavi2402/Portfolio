@@ -1,0 +1,85 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    margin: 0; /* Remove default margin */
+    background-color: #091a2c; /* Background color */
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #091a2c;
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    padding: 10px;
+}
+
+/* Navbar links */
+.navbar a {
+    display: inline-block;
+    text-align: center;
+    padding: 12px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 17px;
+    margin-right: 20px; /* Add space between links */
+}
+
+/* Remove margin-right for the last link */
+.navbar a:last-child {
+    margin-right: 0;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+    background-color: #04AA6D;
+}
+
+/* Current/active navbar link */
+.navbar a.active {
+    color: #04AA6D;
+    border-bottom: 2px solid red; /* Red underline for active link */
+}
+
+.about-me {
+    text-align: center;
+    color: #ffffff;
+    width: 80%;
+    margin-top: 25px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.about-me h1 {
+    font-style: italic;
+    color: aquamarine;
+    margin-bottom: 20px; /* Add space below the heading */
+}
+
+.about-me p {
+    margin-top: 20px; /* Add more space between heading and paragraph */
+    font-size: 1.2rem; /* Adjust font size */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Center align images */
+    gap: 20px; /* Add space between images */
+    margin-top: 30px; /* Add space between content and images */
+}
+
+.image-container img {
+    width: 200px; /* Set smaller size for images */
+    height: 200px; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    object-fit: cover; /* Ensure images maintain aspect ratio and cover the given dimensions */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
